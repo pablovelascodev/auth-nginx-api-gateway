@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  proxy:
+    build: 
+      context: ./proxy
+      dockerfile: Dockerfile
+    ports:
+      - 8000:80
+    networks:
+      - mynetwork
+
+  nodeauth:
+    build:
+      context: ./auth
+      dockerfile: Dockerfile
+    networks:
+      - mynetwork
+  
+  gptservice:
+    build:
+      context: ./gptService
+      dockerfile: Dockerfile
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
