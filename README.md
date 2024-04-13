@@ -1,4 +1,4 @@
-# Authenticated Nginx API Gateway
+# Authenticated Nginx API Gateway 🛡️
 Secure API Gateway with Nginx, using authentication to access private microservices
 
 ## Description
@@ -87,3 +87,9 @@ curl -s -o /dev/null -w "%{http_code}" http://localhost:8000/gpt/v1/csv
 curl -s -o /dev/null -w "%{http_code}" http://localhost:8000/gpt/v1/csv
 200
 ````
+
+---
+
+Thanks for checking out my project! If you found it useful or interesting, I'd really appreciate it if you could give it a star on GitHub. Your support means a lot and helps me keep improving. Thanks a bunch! 😎
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-%23FFDD00.svg?&style=for-the-badge&logo=ko-fi&logoColor=black)](https://www.buymeacoffee.com/pablovelasco)
