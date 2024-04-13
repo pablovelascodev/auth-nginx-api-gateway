@@ -49,3 +49,19 @@ app.get("/", (req, res) => {
   }
 });
 ```
+
+## Usage Example
+
+We made a request to our private **gtp** service, attacking **gpt/csv** endpoint:
+
+If we do the same request twice, NodeJS auth service will randomly chose if the request is rejected or not.
+
+```
+curl -s -o /dev/null -w "%{http_code}" http://localhost:8000/gpt/v1/csv
+401
+```
+
+```
+curl -s -o /dev/null -w "%{http_code}" http://localhost:8000/gpt/v1/csv
+200
+````
