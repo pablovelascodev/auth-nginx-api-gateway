@@ -50,6 +50,28 @@ app.get("/", (req, res) => {
 });
 ```
 
+## Usage instructions
+
+First, we build the images.
+
+```
+> docker-compose build
+[+] Building 26.3s (26/26) FINISHED
+```
+
+Then start the services
+```
+docker-compose up -d    
+[+] Building 0.0s (0/0)
+[+] Running 4/4
+ ✔ Network auth-nginx-proxy_mynetwork       Created 
+ ✔ Container auth-nginx-proxy-proxy-1       Started 
+ ✔ Container auth-nginx-proxy-gptservice-1  Started 
+ ✔ Container auth-nginx-proxy-nodeauth-1    Started
+```
+ 
+After running these commands, your services will be up and running, ready to be used.
+
 ## Usage Example
 
 We made a request to our private **gtp** service, attacking **gpt/csv** endpoint:
