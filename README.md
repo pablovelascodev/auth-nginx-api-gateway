@@ -7,7 +7,7 @@ The main idea is to bring a secure and efficient way to structure your microserv
 
 ![githubAIAssistant](https://github.com/pablovelasco99/auth-nginx-proxy/assets/58036351/b96a284c-72dc-4bc3-a861-7b4e78db0c00)
 
-In this example, NodeJS authentication service is randomly accepting and rejecting requests to simply show how an authentication process works. For private microservices, it have been used an Express API, but feel free to use whatever you want.
+In this example, NodeJS authentication service is randomly accepting and rejecting requests to simply show how an authentication process works. For private microservices, it has been used an Express API, but feel free to use whatever you want.
 
 ## How it works
 
